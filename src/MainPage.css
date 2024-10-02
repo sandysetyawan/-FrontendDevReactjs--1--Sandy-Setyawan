@@ -1,0 +1,59 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 kolom */
+    gap: 16px; /* Jarak antar item */
+    padding: 16px; /* Padding di sekitar grid */
+  }
+  
+  .grid-item {
+    background-color: #ffffff; /* Warna latar belakang putih untuk item */
+    border: 2px solid #003366; /* Border biru gelap */
+    border-radius: 8px; /* Sudut melengkung */
+    padding: 16px; /* Padding dalam item */
+    text-align: left; /* Rata kiri untuk teks */
+    display: flex; /* Mengaktifkan Flexbox */
+    flex-direction: column; /* Mengatur arah kolom */
+    justify-content: space-between; /* Memastikan item diatur dengan ruang di antara mereka */
+    height: 100%; /* Membuat tinggi item penuh untuk konsistensi */
+    transition: transform 0.2s; /* Efek hover */
+  }
+  
+  
+  .grid-item:hover {
+    transform: scale(1.05); /* Zoom in saat hover */
+  }
+  
+  .grid-item h2 {
+    color: #003366; /* Warna biru gelap untuk nama restoran */
+    font-size: 18px; /* Ukuran font yang lebih kecil untuk nama restoran */
+    margin: 0; /* Menghilangkan margin default */
+    font-weight: bold; /* Menambahkan ketebalan font jika diinginkan */
+  }
+  
+  
+  .grid-item p {
+    color: #003366; /* Warna biru gelap untuk harga, status, dan kategori */
+  }
+  
+  button {
+    background-color: #003366; /* Warna biru gelap untuk tombol */
+    color: white; /* Warna teks putih */
+    border: none; /* Tanpa border */
+    border-radius: 5px; /* Sudut melengkung */
+    padding: 10px; /* Padding vertikal */
+    width: 100%; /* Membuat tombol sama dengan lebar kotak */
+    cursor: pointer; /* Pointer saat hover */
+    margin-top: 10px; /* Jarak atas */
+  }
+  
+  button:hover {
+    background-color: #002244; /* Warna biru lebih gelap saat hover */
+  }
+  
+  /* Tambahkan CSS untuk load more button agar terpusat */
+  .load-more-container {
+    display: flex;
+    justify-content: center; /* Pusatkan tombol secara horizontal */
+    margin: 20px 0; /* Jarak atas dan bawah */
+  }
+  
